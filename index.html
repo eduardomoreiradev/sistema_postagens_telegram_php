@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagem no Telegram</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Criar Postagem</h2>
+        <form action="postagem.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="titulo">Título da Postagem</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="conteudo">Conteúdo da Postagem</label>
+                <textarea class="form-control" id="conteudo" name="conteudo" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="midia">Imagem ou Vídeo (opcional)</label>
+                <input type="file" class="form-control-file" id="midia" name="midia">
+            </div>
+            <div class="form-group">
+                <label for="youtube">Link do Vídeo do YouTube (opcional)</label>
+                <input type="url" class="form-control" id="youtube" name="youtube" placeholder="https://www.youtube.com/watch?v=exemplo">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Postar</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
